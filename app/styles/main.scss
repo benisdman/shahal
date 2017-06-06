@@ -1,0 +1,184 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  font-family: 'pauzafot_boldregular' , sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+  .no-padding {
+    padding:0;
+  }
+
+  .section-1 {
+    .images-container {
+      background-image: url(../images/header-bg.png);
+      background-size: cover;
+      position: relative;
+      height: 21rem;
+      background-position-x: 61%;
+
+      #heart-logo {
+        position:absolute;
+        width: 30%;
+        top: 3rem;
+        right: 2rem;
+      }
+
+      #big-doctor {
+        position: absolute;
+        bottom:0;
+        width: 40%;
+        margin: auto;
+        left: 0;
+        right: 0;
+      }
+
+      #shahal-mobile-logo {
+        position:absolute;
+        width: 30%;
+        top:0;
+        left: 2rem;
+      }
+    }
+    p {
+      font-size: 2rem;
+      padding: 0.5rem 4rem;
+      text-align: center;
+      background-color:#ebebeb;
+    }
+
+    .small-letters {
+      text-align: center;
+      padding: 0px 3rem;
+    }
+
+    .form-header {
+      background-color: #ee7905;
+      margin: 0;
+      color: white;
+      text-align: center;
+      border-bottom: 2px solid white;
+      padding-bottom: 2rem;
+      padding-top: 0.5rem;
+    }
+
+    form {
+      padding: 2rem 3rem;
+      background-color:#ee7905;
+      color:white;
+
+      label {font-weight:lighter;}
+
+      button {
+          width: 100%;
+          background-color: #ebebeb;
+          color: black;
+          font-size: 3rem;
+          padding: 0;
+          margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  .section-2 {
+    margin-bottom: 2rem;
+    #logo-hila {
+      margin:auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: #2a909f;
+    }
+
+    p {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    #doctors-carousel {
+      .carousel-inner{
+        height: 29rem;
+        .item {
+          img {
+            margin: auto;
+          }
+          .doctors-carousel-slide-text {
+            text-align: center;
+            padding:0 2rem;
+            .doctor-name {
+              font-size: 2rem;
+              color: #ee7905;
+            }
+            .doctor-info {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+
+      a {
+        display: block;
+        position: absolute;
+        bottom: 18rem;
+        &.carousel-control-next {
+          right: 5rem;
+          .carousel-control-next-icon {
+            background-image: url(../icons/carousel-control-next-icon.png);
+            background-size: cover;
+            display: block;
+            height: 3rem;
+            width: 3rem;
+          }
+        }
+
+        &.carousel-control-prev {
+          left:5rem;
+          .carousel-control-prev-icon {
+            background-image: url(../icons/carousel-control-prev-icon.png);
+            background-size: cover;
+            display: block;
+            height: 3rem;
+            width: 3rem;
+          }
+        }
+      }
+    }
+  }
+
+  .section-3 {
+    background-color: #ebebeb;
+    h1 {
+      text-align: center;
+      color: #ee7905;
+      border-bottom: 2px solid #ee7905;
+      padding-bottom: 1.5rem;
+      padding-top: 1rem;
+      width: 80%;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .icons-container {
+      #phone-icon {
+        background-image: url(../images/heart-monitor.svg);
+        background-size:cover;
+      }
+    }
+  }
+}
