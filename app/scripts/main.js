@@ -8,9 +8,11 @@ $(document).ready(function() {
 	$(window).scroll(function(){
 	    if($(window).scrollTop() > (height)){
 	       $('footer').addClass('fixed');
+	       $('.section-3').addClass('fixed');
 	    }
 	    else{
 	       $('footer').removeClass('fixed');
+	       $('.section-3').addClass('fixed');
 	    }
 	});
  

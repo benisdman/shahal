@@ -32,7 +32,7 @@ body {
 .no-padding {
   padding:0;
 }
-
+$footer-height:17rem;
 .section-1 {
   $section-height: 56rem;
   .images-container {
@@ -348,9 +348,11 @@ footer {
 
   }
 
-  &.fixed {position:fixed;bottom:0; width:100%;}
+  &.fixed {position:fixed;bottom:0; width:100%; height:$footer-height;}
 }
-
+.section-3.fixed {
+  margin-bottom:15rem;
+}
 /*====================================
 =            Desktop-Only            =
 ====================================*/
