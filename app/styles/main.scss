@@ -2,183 +2,360 @@ $icon-font-path: '../fonts/';
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
-
+@import "app/fonts/fonts";
+@import "app/vendor/include-media";
+ 
+$breakpoints: (
+  'desktop': 768px
+) !default;
+ 
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
-}
-
+}  
+  
 body {
-  font-family: 'pauzafot_boldregular' , sans-serif;
+  font-family: 'pauzafot_bookregular', sans-serif;
+  position:relative;
 }
 
-@media only screen and (max-width: 768px) {
-  .no-padding {
-    padding:0;
+.btn-gray {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ebebeb+51,d7d7d7+54 */
+  background: rgb(235,235,235); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(235,235,235,1) 51%, rgba(215,215,215,1) 54%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(235,235,235,1) 51%,rgba(215,215,215,1) 54%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(235,235,235,1) 51%,rgba(215,215,215,1) 54%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#d7d7d7',GradientType=0 ); /* IE6-9 */
+}
+.no-padding {
+  padding:0;
+}
+
+.section-1 {
+  $section-height: 56rem;
+  .images-container {
+    @include media(">desktop") {
+      // height:100%;
+      height:$section-height;
+      max-height:$section-height;
+    }
+
+    background-image: url(../images/header-bg.png);
+    background-size: cover;
+    position: relative;
+    height: 21rem;
+    background-position-x: 61%;
+
+
+    #heart-logo {
+      @include media(">desktop") {
+        max-width: 20rem;
+        top:4rem;
+        right:0;
+        left:0;
+        margin:auto;
+      }
+      position:absolute;
+      width: 30%;
+      top: 3rem;
+      right: 2rem;
+    }
+
+    #big-doctor {
+      @include media(">desktop") {
+        // position:initial;
+        padding-top:4rem;
+        // width:33%;
+        margin: auto 3rem auto auto;
+        height:35vw;
+        width:auto;
+        max-height:$section-height;
+      }
+
+      position: absolute;
+      bottom:0;
+      width: 40%;
+      margin: auto;
+      left: 0;
+      right: 0;
+    }
+
+    #shahal-mobile-logo {
+      position:absolute;
+      width: 30%;
+      top:0;
+      left: 2rem;
+    }
+  }
+  h1 {
+    @include media(">desktop") {
+      position: absolute;
+      top: 13rem;
+      margin: auto;
+      left: 0;
+      right: 0;
+      width: 30%;
+      background: none;
+      color: #ffffff;
+      font-size:3vw;
+    }
+    font-family: 'pauzafot_lightregular', sans-serif;
+    font-size: 2rem;
+    padding: 0.5rem 4rem;
+    text-align: center;
+    background-color:#ebebeb;
   }
 
-  .section-1 {
-    .images-container {
-      background-image: url(../images/header-bg.png);
-      background-size: cover;
-      position: relative;
-      height: 21rem;
-      background-position-x: 61%;
-
-      #heart-logo {
-        position:absolute;
-        width: 30%;
-        top: 3rem;
-        right: 2rem;
-      }
-
-      #big-doctor {
-        position: absolute;
-        bottom:0;
-        width: 40%;
-        margin: auto;
-        left: 0;
-        right: 0;
-      }
-
-      #shahal-mobile-logo {
-        position:absolute;
-        width: 30%;
-        top:0;
-        left: 2rem;
-      }
-    }
-    p {
-      font-size: 2rem;
-      padding: 0.5rem 4rem;
-      text-align: center;
+  .small-letters {
+    @include media(">desktop") {
+      text-align:right;
+      font-size:2rem;
       background-color:#ebebeb;
     }
-
-    .small-letters {
-      text-align: center;
-      padding: 0px 3rem;
-    }
-
-    .form-header {
-      background-color: #ee7905;
-      margin: 0;
-      color: white;
-      text-align: center;
-      border-bottom: 2px solid white;
-      padding-bottom: 2rem;
-      padding-top: 0.5rem;
-    }
-
-    form {
-      padding: 2rem 3rem;
-      background-color:#ee7905;
-      color:white;
-
-      label {font-weight:lighter;}
-
-      button {
-          width: 100%;
-          background-color: #ebebeb;
-          color: black;
-          font-size: 3rem;
-          padding: 0;
-          margin-bottom: 0.5rem;
-      }
-    }
+    text-align: center;
+    padding: 0px 3rem;
   }
 
-  .section-2 {
-    margin-bottom: 2rem;
-    #logo-hila {
-      margin:auto;
-    }
+  .form-header {
+    background-color: #ee7905;
+    margin: 0;
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid white;
+    padding-bottom: 2rem;
+    padding-top: 0.5rem;
+  }
 
-    h1 {
-      text-align: center;
-      font-size: 3rem;
-      color: #2a909f;
-    }
+  form {
+    &#desktop-form {
+      position:absolute;
+      left:9%;
+      top:0;
+      height:100%;
+      width:22%;
+      padding:0;
 
-    p {
-      font-size: 2rem;
-      text-align: center;
+      .logo {
+        background-color: #ffffff;
+        padding: 1rem;
+        text-align: center;
+        position:relative;
+        .triangle {
+          position: absolute;
+          bottom: -1rem;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+        img.shahal-logo {height:5vw;}
+      }
+
+      .form-group, .form-check {
+        padding: 0rem 3rem;
+        margin-bottom: 1rem;
+      }
+      .form-header {
+        padding-top: 1vw;
+        font-size: 1.5vw;
+        border-bottom: 0;
+        padding-bottom:0.5vw;
+      }
+      
+      .actions {
+        text-align: center;
+        button {
+          width: 15rem;
+          color: black;
+          font-size: 2.5rem;
+          padding: 0;
+          margin-bottom: 0.5rem;
+          display: block;
+          margin: 0 auto 0.5rem auto;
+        }
+      }
+      .phone {
+        color:#ffffff;
+        
+        font-size:4rem;
+        font-family: 'pauzafot_bookregular', sans-serif;
+
+        &:hover, &:active, &:visited, &:focus {text-decoration:none; color:#ffffff;}
+        span {vertical-align: sub;}
+      }
+
+      label {margin:0;}
+    }
+    padding: 2rem 3rem;
+    background-color:#ee7905;
+    color:white;
+
+    label {font-weight:lighter;}
+
+    button {
+        width: 100%;
+        background-color: #ebebeb;
+        color: black;
+        font-size: 3rem;
+        padding: 0;
+        margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.section-2 {
+  margin-bottom: 2rem;
+  @include media(">desktop") {  
+    .header {
+      text-align:center;
+      h2, #logo-hila {display:inline-block;}
+
+      h2 {
+        margin-left: 2rem;
+        vertical-align: bottom;
+        margin-top: 0;
+        margin-bottom: 0;
+        color:#ee7905;
+      }
+      #logo-hila {
+        width:13rem;
+      }
     }
 
     #doctors-carousel {
-      .carousel-inner{
-        height: 29rem;
-        .item {
-          img {
-            margin: auto;
+      margin-top:3rem;
+      .item {
+        display:block;
+        width:18%;
+        float:right;
+        margin-left: 2rem;
+      }
+
+    }
+  }
+  #logo-hila {
+    margin:auto;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #2a909f;
+  }
+
+  p {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #doctors-carousel {
+    .carousel-inner{
+      height: 29rem;
+      .item {
+        img {
+          margin: auto;
+        }
+        .doctors-carousel-slide-text {
+          text-align: center;
+          padding:0 2rem;
+          .doctor-name {
+            font-size: 2rem;
+            color: #ee7905;
           }
-          .doctors-carousel-slide-text {
-            text-align: center;
-            padding:0 2rem;
-            .doctor-name {
-              font-size: 2rem;
-              color: #ee7905;
-            }
-            .doctor-info {
-              font-size: 1.5rem;
-            }
+          .doctor-info {
+            font-size: 1.5rem;
           }
         }
       }
+    }
 
-      a {
-        display: block;
-        position: absolute;
-        bottom: 18rem;
-        &.carousel-control-next {
-          right: 5rem;
-          .carousel-control-next-icon {
-            background-image: url(../icons/carousel-control-next-icon.png);
-            background-size: cover;
-            display: block;
-            height: 3rem;
-            width: 3rem;
-          }
+    a {
+      display: block;
+      position: absolute;
+      bottom: 18rem;
+      &.carousel-control-next {
+        right: 5rem;
+        .carousel-control-next-icon {
+          background-image: url(../icons/carousel-control-next-icon.png);
+          background-size: cover;
+          display: block;
+          height: 3rem;
+          width: 3rem;
         }
+      }
 
-        &.carousel-control-prev {
-          left:5rem;
-          .carousel-control-prev-icon {
-            background-image: url(../icons/carousel-control-prev-icon.png);
-            background-size: cover;
-            display: block;
-            height: 3rem;
-            width: 3rem;
-          }
+      &.carousel-control-prev {
+        left:5rem;
+        .carousel-control-prev-icon {
+          background-image: url(../icons/carousel-control-prev-icon.png);
+          background-size: cover;
+          display: block;
+          height: 3rem;
+          width: 3rem;
         }
       }
     }
   }
+}
 
-  .section-3 {
-    background-color: #ebebeb;
-    h1 {
-      text-align: center;
-      color: #ee7905;
-      border-bottom: 2px solid #ee7905;
-      padding-bottom: 1.5rem;
-      padding-top: 1rem;
-      width: 80%;
-      margin: auto;
-    }
+.section-3 {
+  background-color: #ebebeb;
+  h1 {
+    text-align: center;
+    color: #ee7905;
+    border-bottom: 2px solid #ee7905;
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    width: 80%;
+    margin: auto;
+  }
 
-    h2 {
-      font-size: 2rem;
-      text-align: center;
-    }
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
 
-    .icons-container {
-      #phone-icon {
-        background-image: url(../images/heart-monitor.svg);
-        background-size:cover;
-      }
+  .icons-container {
+    #phone-icon {
+      background-image: url(../images/heart-monitor.svg);
+      background-size:cover;
     }
   }
+}
+
+footer {
+  #footer-form {
+    background-color: #ee7905;
+    color:#ffffff;
+    .form-header {
+      text-align: center;
+      padding-top: 1.5rem;
+    }
+
+    .form-input-container {
+      text-align:center;
+    }
+    .form-checkbox-container {
+      text-align:center;
+      & > div {display:inline-block;}
+    }
+    .form-group {
+      text-align:right;
+      width:13%;
+      display:inline-block;
+    } 
+
+  }
+
+  &.fixed {position:fixed;bottom:0; width:100%;}
+}
+
+/*====================================
+=            Desktop-Only            =
+====================================*/
+@media only screen and (min-width: 768px) {
+  
+
+  
 }
