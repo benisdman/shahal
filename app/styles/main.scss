@@ -41,7 +41,7 @@ $footer-height:17rem;
       height:$section-height;
       max-height:$section-height;
       .content-wrapper {
-        width: 73%;
+        width: 76%;
         height: 100%;
         display: block;
         margin: auto;
@@ -52,7 +52,7 @@ $footer-height:17rem;
     background-image: url(../images/header-bg.png);
     background-size: cover;
     position: relative;
-    height: 21rem;
+    height: 15rem;
     background-position-x: 61%;
     background-position-y: 83%;
 
@@ -67,7 +67,7 @@ $footer-height:17rem;
       }
       position:absolute;
       width: 30%;
-      top: 3rem;
+      top: 2rem;
       right: 2rem;
     }
 
@@ -75,7 +75,7 @@ $footer-height:17rem;
       @include media(">desktop") {
         // position:initial;
         padding-top:4rem;
-        // width:33%;
+        width:40%;
         margin: auto 3rem auto auto;
         height:35vw;
         width:auto;
@@ -84,7 +84,7 @@ $footer-height:17rem;
 
       position: absolute;
       bottom:0;
-      width: 40%;
+      width: 45%;
       margin: auto;
       left: 0;
       right: 0;
@@ -109,18 +109,23 @@ $footer-height:17rem;
       color: #ffffff;
       font-size: 4.5rem;
       line-height: 1;
+      font-family: 'pauzafot_lightregular', sans-serif;
 
     }
     span {
       font-family: 'pauzafot_bookregular', sans-serif;
-      border-bottom: 2px solid #ffffff;
+      border-bottom: 2px solid #000000;
+      font-weight: bold;
+      @include media(">desktop") {
+        border-bottom: 2px solid #ffffff;
+      }
     }
-    font-family: 'pauzafot_lightregular', sans-serif;
-    font-size: 2rem;
-    padding: 0.5rem 4rem;
+    font-family: 'pauzafot_bookregular', sans-serif;
+    font-size: 2.2rem;
+    padding: 1rem 4rem;
     text-align: center;
     background-color:#ebebeb;
-    margin-top: 0;
+    margin: 0;
   }
 
   .small-letters {
@@ -139,9 +144,13 @@ $footer-height:17rem;
     color: white;
     text-align: center;
     border-bottom: 2px solid white;
-    padding-bottom: 2rem;
-    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    font-size: 3.8rem;
+    letter-spacing: 1px;
+    line-height: 3rem;
+    padding-top: 0.6rem;
   }
+  
 
   form {
     &#desktop-form {
@@ -178,6 +187,7 @@ $footer-height:17rem;
         padding: 0rem 1rem;
         font-family: 'pauzafot_lightregular', sans-serif;
         letter-spacing: 1px;
+        font-size: 1.4rem;
       }
 
       .form-group {
@@ -224,19 +234,51 @@ $footer-height:17rem;
 
       label {margin:0;}
     }
-    padding: 2rem 3rem;
+    padding: 0.3rem 3rem;
     background-color:#ee7905;
     color:white;
 
-    label {font-weight:lighter;}
+    .mandatory-fields {
+      text-align: left;
+      font-family: 'pauzafot_lightregular', sans-serif;
+      position: relat;
 
-    button {
+    }
+
+    .form-check {
+      font-family: 'pauzafot_lightregular', sans-serif;
+      font-size:1.7rem;
+      line-height: 1rem;
+      label {margin:0;}
+    }
+
+    .form-group {
+      margin-bottom: 0;
+      label {
+        font-family: 'pauzafot_lightregular', sans-serif;
+        font-size: 2rem;
+        letter-spacing: 1px;
+        margin-bottom: 0;
+      }
+    }
+
+    .buttons-container {
+      margin: 1rem 0;
+      button {
         width: 100%;
         background-color: #ebebeb;
         color: black;
         font-size: 3rem;
         padding: 0;
-        margin-bottom: 0.5rem;
+        // margin-top: 1rem;
+        margin-bottom: 0.8rem;
+        height: 3rem;
+        line-height: 1rem;
+
+        span {
+          vertical-align: -4px;
+        }
+      }
     }
   }
 }
@@ -250,10 +292,11 @@ $footer-height:17rem;
 
       h2 {
         margin-left: 2rem;
-        vertical-align: text-top;
+        vertical-align: -27px;
         margin-top: 0;
         margin-bottom: 0;
         color:#ee7905;
+        font-size:4rem;
       }
       #logo-hila {
         width:13rem;
@@ -275,30 +318,40 @@ $footer-height:17rem;
   }
   #logo-hila {
     margin:auto;
+    height: 7rem;
   }
 
   h2 {
     text-align: center;
-    font-size: 4.3rem;
+    font-size: 3.1rem;
     color: #2a909f;
+    margin: 0;
   }
 
   p {
-    font-size: 2rem;
+    font-size: 2.3rem;
+    margin-top: 0.6rem;
+    margin-bottom: 3rem;
     text-align: center;
-    font-family: 'pauzafot_lightregular', sans-serif;
+    font-family: 'pauzafot_bookregular', sans-serif;
+    line-height: 2.6rem;
     @include media(">desktop") {
       width: 70%;
       margin: auto;
       padding-top:1rem;
       font-size: 2.7rem;
+      font-family: 'pauzafot_lightregular', sans-serif;
+      line-height: 4rem;
     }
   }
 
   #doctors-carousel {
     .carousel-inner{
-      height: 30rem;
+      height: 31rem;
       margin:0;
+      @include media(">desktop") {
+        height: 38rem;
+      }
       .item {
         img {
           margin: auto;
@@ -307,11 +360,11 @@ $footer-height:17rem;
           text-align: center;
           padding:0 2rem;
           .doctor-name {
-            font-size: 2rem;
+            font-size: 2.2rem;
             color: #ee7905;
           }
           .doctor-info {
-            font-size: 1.5rem;
+            font-size: 1.7rem;
             @include media(">desktop") {
               font-size: 1.8rem;
             }
@@ -323,9 +376,9 @@ $footer-height:17rem;
     a {
       display: block;
       position: absolute;
-      bottom: 18rem;
+      bottom: 19rem;
       &.carousel-control-next {
-        right: 3rem;
+        right: 1rem;
         .carousel-control-next-icon {
           background-image: url(../icons/carousel-control-next-icon.png);
           background-size: cover;
@@ -336,7 +389,7 @@ $footer-height:17rem;
       }
 
       &.carousel-control-prev {
-        left:3rem;
+        left:1rem;
         .carousel-control-prev-icon {
           background-image: url(../icons/carousel-control-prev-icon.png);
           background-size: cover;
@@ -356,7 +409,7 @@ $footer-height:17rem;
     text-align: center;
     color: #ee7905;
     border-bottom: 2px solid #ee7905;
-    padding-bottom: 1.5rem;
+    padding-bottom: 0.6rem;
     padding-top: 1rem;
     width: 80%;
     margin: auto;
@@ -374,7 +427,9 @@ $footer-height:17rem;
 
 
   p {
-    font-size: 2rem;
+    font-family: 'pauzafot_bookregular', sans-serif;
+    font-size: 2.2rem;
+    margin-top: 0.7rem;
     text-align: center;
     font-family: 'pauzafot_lightregular', sans-serif;
     @include media(">desktop") {
@@ -400,14 +455,15 @@ $footer-height:17rem;
       }
 
       img {
-        padding: 1.5rem 4rem;
         max-width: 93%;
         margin: auto;
+        padding: 0 4rem;
       }
 
       .icon-text {
         font-size: 2rem;
         text-align: center;
+        margin-bottom: 2rem;
       }
     }
   }
@@ -480,7 +536,7 @@ footer {
 
       }
       .form-control {
-        height: 3.5rem;
+        height: 2.5rem;
       }
       &.actions {
         color: black;
