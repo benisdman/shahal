@@ -106,6 +106,7 @@ $footer-height:17rem;
     padding: 0.5rem 4rem;
     text-align: center;
     background-color:#ebebeb;
+    margin-top: 0;
   }
 
   .small-letters {
@@ -225,6 +226,7 @@ $footer-height:17rem;
 
     #doctors-carousel {
       margin-top:3rem;
+
       .item {
         display:block;
         width:18%;
@@ -247,11 +249,17 @@ $footer-height:17rem;
   p {
     font-size: 2rem;
     text-align: center;
+    @include media(">desktop") {
+      width: 70%;
+      margin: auto;
+      padding-top:1rem;
+    }
   }
 
   #doctors-carousel {
     .carousel-inner{
       height: 29rem;
+      margin:0;
       .item {
         img {
           margin: auto;
@@ -275,7 +283,7 @@ $footer-height:17rem;
       position: absolute;
       bottom: 18rem;
       &.carousel-control-next {
-        right: 5rem;
+        right: 3rem;
         .carousel-control-next-icon {
           background-image: url(../icons/carousel-control-next-icon.png);
           background-size: cover;
@@ -286,7 +294,7 @@ $footer-height:17rem;
       }
 
       &.carousel-control-prev {
-        left:5rem;
+        left:3rem;
         .carousel-control-prev-icon {
           background-image: url(../icons/carousel-control-prev-icon.png);
           background-size: cover;
@@ -301,7 +309,8 @@ $footer-height:17rem;
 
 .section-3 {
   background-color: #ebebeb;
-  h1 {
+  h2 {
+    font-size: 3rem;
     text-align: center;
     color: #ee7905;
     border-bottom: 2px solid #ee7905;
@@ -309,17 +318,50 @@ $footer-height:17rem;
     padding-top: 1rem;
     width: 80%;
     margin: auto;
+    @include media(">desktop") {
+      border-bottom:none;
+    }
   }
 
-  h2 {
+  hr {
+    @include media(">desktop") {
+      border-top: 2px solid #ee7905;
+      width: 10%;
+    }
+  }
+
+
+  p {
     font-size: 2rem;
     text-align: center;
+    @include media(">desktop") {
+      width: 50%;
+      margin: auto;
+    }
   }
 
-  .icons-container {
-    #phone-icon {
-      background-image: url(../images/heart-monitor.svg);
-      background-size:cover;
+  ul.icons-container {
+    list-style: none;
+    padding-right:0;
+    @include media(">desktop") {
+      text-align: center;
+    }
+    li {
+      width: 49%;
+      display: inline-block;
+      margin-bottom: 1rem;
+      @include media(">desktop") {
+        width: auto;
+      }
+
+      img {
+        padding: 1.5rem 4rem;
+      }
+
+      .icon-text {
+        font-size: 2rem;
+        text-align: center;
+      }
     }
   }
 }
@@ -344,6 +386,13 @@ footer {
       text-align:right;
       width:13%;
       display:inline-block;
+      &.actions {
+        color: black;
+        text-align: center;
+        button {
+          padding: 0.5rem 3rem;
+        }
+      }
     } 
 
   }
