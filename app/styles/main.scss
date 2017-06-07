@@ -36,7 +36,7 @@ $footer-height:17rem;
 .section-1 {
   $section-height: 56rem;
   .images-container {
-    @include media(">desktop") {
+    @include media(">phone") {
       // height:100%;
       height:$section-height;
       max-height:$section-height;
@@ -402,6 +402,7 @@ $footer-height:17rem;
       img {
         padding: 1.5rem 4rem;
         max-width: 93%;
+        margin: auto;
       }
 
       .icon-text {
