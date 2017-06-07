@@ -32,7 +32,7 @@ body {
 .no-padding {
   padding:0;
 }
-$footer-height:17rem;
+$footer-height:16rem;
 .section-1 {
   $section-height: 56rem;
   .images-container {
@@ -41,7 +41,7 @@ $footer-height:17rem;
       height:$section-height;
       max-height:$section-height;
       .content-wrapper {
-        width: 78%;
+        width: 73%;
         height: 100%;
         display: block;
         margin: auto;
@@ -54,6 +54,7 @@ $footer-height:17rem;
     position: relative;
     height: 21rem;
     background-position-x: 61%;
+    background-position-y: 83%;
 
 
     #heart-logo {
@@ -144,6 +145,7 @@ $footer-height:17rem;
 
   form {
     &#desktop-form {
+      max-width: 34rem;
       position:absolute;
       left:6%;
       top:0;
@@ -260,10 +262,11 @@ $footer-height:17rem;
 
     #doctors-carousel {
       margin-top:3rem;
-
+      height:100%;
+    
       .item {
         display:block;
-        width:18%;
+        width:17%;
         float:right;
         margin-left: 2rem;
       }
@@ -392,11 +395,13 @@ $footer-height:17rem;
       display: inline-block;
       margin-bottom: 1rem;
       @include media(">desktop") {
+        margin: 1rem 2vw;
         width: auto;
       }
 
       img {
         padding: 1.5rem 4rem;
+        max-width: 93%;
       }
 
       .icon-text {
@@ -411,36 +416,58 @@ footer {
   #footer-form {
     background-color: #ee7905;
     color:#ffffff;
+    height:100%;
     .form-header {
+      margin: auto;
+      width: 71%;
       text-align: center;
       padding-top: 1.5rem;
+      font-size: 3rem;
     }
 
     .form-input-container {
       text-align:center;
+      width: 80%;
+      margin: auto;
+      margin-top: 0.5rem;
     }
     .form-checkbox-container {
       text-align:center;
+      width: 34%;
+      margin: auto;
+      max-width: 56rem;
+      .mandatory-fields {display:block;}
+      .checkbox-wrapper { text-align:left; width:100%;}
+      .form-check {float:left; margin-right:0.5rem;}
       & > div {display:inline-block;}
     }
     .form-group {
-      text-align:right;
-      width:17%;
-      display:inline-block;
+      text-align: right;
+      width: 17%;
+      display: inline-block;
       font-family: 'pauzafot_lightregular', sans-serif;
       letter-spacing: 1px;
       font-size: 1.6rem;
+      max-width: 28rem;
+      margin-left: 0.6rem;
+      margin-bottom: 0;
       .form-control {
-        height: 2.5rem;
+        height: 3.5rem;
       }
       &.actions {
         color: black;
-        text-align: center;
+        text-align: right;
+        max-width: 13rem;
         button {
-          padding: 0.5rem 3rem;
+          height: 3.5rem;
+          font-size: 2.3rem;
+          line-height: 1;
+          padding: 0.5rem 1rem;
           font-family: 'pauzafot_bookregular', sans-serif;
         }
       }
+
+      label {font-size:1.8rem;}
     } 
 
   }
@@ -450,11 +477,10 @@ footer {
 .section-3.fixed {
   margin-bottom:15rem;
 }
-/*====================================
-=            Desktop-Only            =
-====================================*/
-@media only screen and (min-width: 768px) {
-  
 
-  
+@include media(">phone", "<desktop") {
+  .section-1 .images-container {
+    h1 {font-size:3.5rem;}
+  }
 }
+
