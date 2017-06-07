@@ -103,7 +103,7 @@ $footer-height:17rem;
       margin: auto;
       left: 0;
       right: 0;
-      width: 30%;
+      width: 40%;
       background: none;
       color: #ffffff;
       font-size: 4.5rem;
@@ -145,10 +145,10 @@ $footer-height:17rem;
   form {
     &#desktop-form {
       position:absolute;
-      left:9%;
+      left:6%;
       top:0;
       height:100%;
-      width:22%;
+      width:27%;
       padding:0;
 
       .logo {
@@ -166,15 +166,36 @@ $footer-height:17rem;
         img.shahal-logo {height:5vw;}
       }
 
-      .form-group, .form-check {
-        padding: 0rem 3rem;
-        margin-bottom: 1rem;
+      .mandatory-fields {
+        padding: 0rem 1rem;
+        font-family: 'pauzafot_lightregular', sans-serif;
+        letter-spacing: 1px;
+      }
+
+      .form-check {
+        padding: 0rem 1rem;
+        font-family: 'pauzafot_lightregular', sans-serif;
+        letter-spacing: 1px;
+      }
+
+      .form-group {
+        padding: 0rem 1rem;
+        margin-bottom: 0.6rem;
+        label{
+          font-family: 'pauzafot_lightregular', sans-serif;
+          letter-spacing: 1px;
+          font-size:1.6rem;
+        }
+        .form-control {
+          height: 2.5rem;
+        }
       }
       .form-header {
         padding-top: 1vw;
-        font-size: 1.5vw;
         border-bottom: 0;
         padding-bottom:0.5vw;
+        letter-spacing: 2px;
+        font-size: 2.8rem;
       }
       
       .actions {
@@ -186,7 +207,7 @@ $footer-height:17rem;
           padding: 0;
           margin-bottom: 0.5rem;
           display: block;
-          margin: 0 auto 0.5rem auto;
+          margin: 1rem auto 0.5rem auto;
         }
       }
       .phone {
@@ -227,7 +248,7 @@ $footer-height:17rem;
 
       h2 {
         margin-left: 2rem;
-        vertical-align: bottom;
+        vertical-align: text-top;
         margin-top: 0;
         margin-bottom: 0;
         color:#ee7905;
@@ -255,23 +276,25 @@ $footer-height:17rem;
 
   h2 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 4.3rem;
     color: #2a909f;
   }
 
   p {
     font-size: 2rem;
     text-align: center;
+    font-family: 'pauzafot_lightregular', sans-serif;
     @include media(">desktop") {
       width: 70%;
       margin: auto;
       padding-top:1rem;
+      font-size: 2.7rem;
     }
   }
 
   #doctors-carousel {
     .carousel-inner{
-      height: 29rem;
+      height: 30rem;
       margin:0;
       .item {
         img {
@@ -286,6 +309,9 @@ $footer-height:17rem;
           }
           .doctor-info {
             font-size: 1.5rem;
+            @include media(">desktop") {
+              font-size: 1.8rem;
+            }
           }
         }
       }
@@ -323,7 +349,7 @@ $footer-height:17rem;
 .section-3 {
   background-color: #ebebeb;
   h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
     color: #ee7905;
     border-bottom: 2px solid #ee7905;
@@ -347,9 +373,11 @@ $footer-height:17rem;
   p {
     font-size: 2rem;
     text-align: center;
+    font-family: 'pauzafot_lightregular', sans-serif;
     @include media(">desktop") {
       width: 50%;
       margin: auto;
+      font-size:2.5rem;
     }
   }
 
@@ -397,13 +425,20 @@ footer {
     }
     .form-group {
       text-align:right;
-      width:13%;
+      width:17%;
       display:inline-block;
+      font-family: 'pauzafot_lightregular', sans-serif;
+      letter-spacing: 1px;
+      font-size: 1.6rem;
+      .form-control {
+        height: 2.5rem;
+      }
       &.actions {
         color: black;
         text-align: center;
         button {
           padding: 0.5rem 3rem;
+          font-family: 'pauzafot_bookregular', sans-serif;
         }
       }
     } 
