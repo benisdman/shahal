@@ -32,7 +32,7 @@ body {
 .no-padding {
   padding:0;
 }
-$footer-height:16rem;
+$footer-height:17rem;
 .section-1 {
   $section-height: 56rem;
   .images-container {
@@ -436,9 +436,7 @@ footer {
       width: 34%;
       margin: auto;
       max-width: 56rem;
-      .mandatory-fields {display:block;}
-      .checkbox-wrapper { text-align:left; width:100%;}
-      .form-check {float:left; margin-right:0.5rem;}
+      
       & > div {display:inline-block;}
     }
     .form-group {
@@ -451,6 +449,35 @@ footer {
       max-width: 28rem;
       margin-left: 0.6rem;
       margin-bottom: 0;
+
+      &.email-group {
+        position:relative;
+
+
+        .checkbox-wrapper {
+          position: absolute;
+          width: 50rem;
+          left: 0;
+          text-align: left;
+          bottom: -5rem;
+          font-size: 1.6rem;
+
+          label {font-size:1.6rem;}
+
+          &.mandatory-fields {
+            position: absolute;
+            width: 100%;
+            text-align: left;
+            bottom: -2.2rem;
+          }
+        }
+
+
+        .form-check {display:inline-block; margin-right:0.5rem;}
+
+
+
+      }
       .form-control {
         height: 3.5rem;
       }
