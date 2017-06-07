@@ -40,6 +40,13 @@ $footer-height:17rem;
       // height:100%;
       height:$section-height;
       max-height:$section-height;
+      .content-wrapper {
+        width: 78%;
+        height: 100%;
+        display: block;
+        margin: auto;
+        position: relative;
+      }
     }
 
     background-image: url(../images/header-bg.png);
@@ -99,7 +106,13 @@ $footer-height:17rem;
       width: 30%;
       background: none;
       color: #ffffff;
-      font-size:3vw;
+      font-size: 4.5rem;
+      line-height: 1;
+
+    }
+    span {
+      font-family: 'pauzafot_bookregular', sans-serif;
+      border-bottom: 2px solid #ffffff;
     }
     font-family: 'pauzafot_lightregular', sans-serif;
     font-size: 2rem;
