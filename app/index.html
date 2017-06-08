@@ -48,37 +48,42 @@
                     <img src="images/triangle.png" class="triangle" />
                   </div>
                   <h3 class="form-header">לפרטים נוספים<br>ללא התחייבות</h3>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">*שם מלא</label>
-                    <input type="name" class="form-control" id="form-name" aria-describedby="emailHelp" placeholder="">
-                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                  <div class="form-input-container">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">*שם מלא</label>
+                      <input type="name" class="form-control" id="desktop-name" aria-describedby="emailHelp" placeholder="">
+                      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">*טלפון:</label>
+                      <input type="phone" class="form-control" id="desktop-phone" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">דוא״ל:</label>
+                      <input type="email" class="form-control" id="desktop-email" placeholder="">
+                    </div>
+                    <div class="mandatory-fields">
+                      *שדות חובה
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" id="desktop-approve-call">
+                        אני מאשר/ת פנייה של ניציגי שחל וקבוצת הילה
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" id="desktop-approve-marketing">
+                        אני מאשר/ת קבלת חומר שיווקי
+                      </label>
+                    </div>
+                    <div class="form-group actions">
+                      <button type="submit" class="btn btn-gray">תאמו לי שיחה</button>
+                      <a href="tel:*6626" class="phone">6626<span>*</span></a>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">*טלפון:</label>
-                    <input type="phone" class="form-control" id="form-phone" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">דוא״ל:</label>
-                    <input type="phone" class="form-control" id="form-phone" placeholder="">
-                  </div>
-                  <div class="mandatory-fields">
-                    *שדות חובה
-                  </div>
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input type="checkbox" class="form-check-input">
-                      אני מאשר/ת פנייה של ניציגי שחל וקבוצת הילה
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input type="checkbox" class="form-check-input">
-                      אני מאשר/ת קבלת חומר שיווקי
-                    </label>
-                  </div>
-                  <div class="form-group actions">
-                    <button type="submit" class="btn btn-gray">תאמו לי שיחה</button>
-                    <a href="tel:*6626" class="phone">6626<span>*</span></a>
+                  <div class="form-success-container style="display:none;"">
+                    Great Success
                   </div>
                 </form>
                 <!-- End Desktop Form -->
@@ -94,37 +99,42 @@
             ==================================-->
             <h3 class="form-header visible-xs">לפרטים נוספים<br>ללא התחייבות</h3>
             <form id="mobile-form" class="visible-xs">
-              <div class="form-group">
-                <label for="exampleInputEmail1">*שם</label>
-                <input type="name" class="form-control" id="form-name" aria-describedby="emailHelp" placeholder="">
-                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+              <div class="form-input-container">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">*שם</label>
+                  <input type="name" class="form-control" id="mobile-name" aria-describedby="emailHelp" placeholder="">
+                  <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">*טלפון:</label>
+                  <input type="phone" class="form-control" id="mobile-phone" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">דוא״ל:</label>
+                  <input type="email" class="form-control" id="mobile-email" placeholder="">
+                </div>
+                <div class="mandatory-fields">
+                  *שדות חובה
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" id="mobile-approve-call">
+                    אני מאשר/ת פנייה של נציגי שחל
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" id="mobile-approve-marketing">
+                    אני מאשר/ת קבלת חומר שיווקי
+                  </label>
+                </div>
+                <div class="buttons-container">
+                  <button type="submit" class="btn btn-gray">תאמו לי שיחה</button>
+                  <button type="call" class="btn btn-gray">חייגו 6626<span>*</span></button>
+                </div>
               </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">*טלפון:</label>
-                <input type="phone" class="form-control" id="form-phone" placeholder="">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">דוא״ל:</label>
-                <input type="phone" class="form-control" id="form-phone" placeholder="">
-              </div>
-              <div class="mandatory-fields">
-                *שדות חובה
-              </div>
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input type="checkbox" class="form-check-input">
-                  אני מאשר/ת פנייה של נציגי שחל
-                </label>
-              </div>
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input type="checkbox" class="form-check-input">
-                  אני מאשר/ת קבלת חומר שיווקי
-                </label>
-              </div>
-              <div class="buttons-container">
-                <button type="submit" class="btn btn-gray">תאמו לי שיחה</button>
-                <button type="call" class="btn btn-gray">חייגו 6626<span>*</span></button>
+              <div class="form-success-container" style="display:none;">
+                Great Success
               </div>
             </form>
             <!-- End Mobile Form -->
@@ -239,29 +249,29 @@
         <div class="form-input-container">
           <div class="form-group">
             <label for="exampleInputEmail1">*שם מלא</label>
-            <input type="name" class="form-control" id="form-name" aria-describedby="emailHelp" placeholder="">
+            <input type="name" class="form-control" id="footer-name" aria-describedby="emailHelp" placeholder="">
             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">*טלפון:</label>
-            <input type="phone" class="form-control" id="form-phone" placeholder="">
+            <input type="phone" class="form-control" id="footer-phone" placeholder="">
           </div>
           <div class="form-group email-group">
             <label for="exampleInputPassword1">דוא״ל:</label>
-            <input type="phone" class="form-control" id="form-phone" placeholder="">
+            <input type="email" class="form-control" id="footer-email" placeholder="">
             <div class="mandatory-fields checkbox-wrapper">
               *שדות חובה
             </div>
             <div class="checkbox-wrapper">
               <div class="form-check">
                 <label class="form-check-label">
-                  <input type="checkbox" class="form-check-input">
+                  <input type="checkbox" class="form-check-input" id="mobile-approve-call">
                   אני מאשר/ת פנייה של ניציגי שחל
                 </label>
               </div>
               <div class="form-check">
                 <label class="form-check-label">
-                  <input type="checkbox" class="form-check-input">
+                  <input type="checkbox" class="form-check-input" id="mobile-approve-marketing">
                   אני מאשר/ת קבלת חומר שיווקי
                 </label>
               </div>
@@ -272,7 +282,9 @@
           </div>
           
         </div>
-       
+       <div class="form-success-container" style="display:none;">
+         Great Success
+       </div>
         
       </form>
       <!-- End Desktop Form -->
