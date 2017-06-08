@@ -223,6 +223,7 @@ $footer-height:17rem;
           margin-bottom: 0.5rem;
           display: block;
           margin: 1rem auto 0.5rem auto;
+          font-weight: bolder;
         }
       }
       .phone {
@@ -277,6 +278,7 @@ $footer-height:17rem;
         margin-bottom: 0.8rem;
         height: 3rem;
         line-height: 1rem;
+        font-weight: bolder;
 
         span {
           vertical-align: -4px;
@@ -343,8 +345,7 @@ $footer-height:17rem;
       margin: auto;
       padding-top:1rem;
       font-size: 2.7rem;
-      font-family: 'pauzafot_lightregular', sans-serif;
-      line-height: 4rem;
+      line-height: 3rem;
     }
   }
 
@@ -368,6 +369,7 @@ $footer-height:17rem;
           }
           .doctor-info {
             font-size: 1.9rem;
+            line-height: 2rem;
             @include media(">phone") {
               font-size: 1.8rem;
             }
@@ -475,6 +477,7 @@ $footer-height:17rem;
         font-size: 2rem;
         text-align: center;
         margin-bottom: 2rem;
+        margin-top: 1.2rem;
       }
     }
 
@@ -549,7 +552,7 @@ footer {
 
       }
       .form-control {
-        height: 2.5rem;
+        height: 2.7rem;
       }
       &.actions {
         color: black;
@@ -561,6 +564,7 @@ footer {
           line-height: 1;
           padding: 0.5rem 1rem;
           font-family: 'pauzafot_bookregular', sans-serif;
+          font-weight: bolder;
         }
       }
 
