@@ -2,7 +2,6 @@
   "name": "generator-webapp",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.1",
     "bootstrap-rtl": "^3.4.0"
   },
