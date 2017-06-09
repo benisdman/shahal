@@ -242,48 +242,59 @@ $footer-height:17rem;
     background-color:#ee7905;
     color:white;
 
-    .mandatory-fields {
-      text-align: left;
-      font-family: 'pauzafot_lightregular', sans-serif;
-      position: relat;
-
-    }
-
-    .form-check {
-      font-family: 'pauzafot_lightregular', sans-serif;
-      font-size:1.7rem;
-      line-height: 1rem;
-      label {margin:0;}
-    }
-
-    .form-group {
-      margin-bottom: 0;
-      label {
+    .form-input-container {
+      .mandatory-fields {
+        text-align: left;
         font-family: 'pauzafot_lightregular', sans-serif;
-        font-size: 2rem;
-        letter-spacing: 1px;
-        margin-bottom: 0;
+        position: relat;
+
       }
-    }
 
-    .buttons-container {
-      margin: 1rem 0;
-      button {
-        width: 100%;
-        background-color: #ebebeb;
-        color: black;
-        font-size: 3rem;
-        padding: 0;
-        // margin-top: 1rem;
-        margin-bottom: 0.8rem;
-        height: 3rem;
+      .form-check {
+        font-family: 'pauzafot_lightregular', sans-serif;
+        font-size:1.7rem;
         line-height: 1rem;
-        font-weight: bolder;
+        label {margin:0;}
+      }
 
-        span {
-          vertical-align: -4px;
+      .form-group {
+        margin-bottom: 0;
+        label {
+          font-family: 'pauzafot_lightregular', sans-serif;
+          font-size: 2rem;
+          letter-spacing: 1px;
+          margin-bottom: 0;
         }
       }
+
+      .buttons-container {
+        margin: 1rem 0;
+        button {
+          width: 100%;
+          background-color: #ebebeb;
+          color: black;
+          font-size: 3rem;
+          padding: 0;
+          // margin-top: 1rem;
+          margin-bottom: 0.8rem;
+          height: 3rem;
+          line-height: 1rem;
+          font-weight: bolder;
+
+          span {
+            vertical-align: -4px;
+          }
+        }
+      }
+    }
+    .form-success-container {
+      display: none;
+      text-align: center;
+      margin-top: 7rem;
+      font-size: 3rem;
+      border-bottom: 2px solid;
+      border-top: 2px solid;
+      margin-bottom: 7rem;
     }
   }
 }
@@ -498,12 +509,22 @@ footer {
       font-size: 3rem;
     }
 
+    .form-success-container {
+      text-align: center;
+      font-size: 3rem;
+      border-bottom: 2px solid;
+      border-top: 2px solid;
+      width: 30%;
+      margin: 3rem auto;
+    }
+
     .form-input-container {
       text-align:center;
       width: 80%;
       margin: auto;
       margin-top: 0.5rem;
     }
+
     .form-checkbox-container {
       text-align:center;
       width: 34%;
@@ -586,5 +607,5 @@ footer {
 }
 
 .error {
-  background-color:red;
+  background-color:#fbafaf;
 }
